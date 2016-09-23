@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>events - reactjs</title>
+</head>
+<body>
+	<div id="events">
+		<!-- hasil reactjs akan di tampilkan disini -->
+	</div>
+
+	<script src="../build/react.js"></script>
+	<script src="../build/react-dom.js"></script>
+	<script src="../browser.min.js"></script>
+	<script type="text/babel">
+		var Events = React.createClass({
+			incrementCount: function() {
+				this.setState({
+					count: this.state.count + 1
+				});
+			},
+
+			getInitialState: function() {
+				return {
+					count: 0
+				}
+			},
+
+			render: function() {
+				return (
+					<div class="events-component">
+						<h1>Count: {this.state.count}!</h1>
+						<button type="button" onClick={this.incrementCount}>Increment</button>
+					</div>
+				)
+			}
+		});
+
+		ReactDOM.render(
+			<Events />,
+			document.getElementById('events')
+		);
+	</script>
+</body>
+</html>
