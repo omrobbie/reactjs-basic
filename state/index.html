@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>state - reactjs</title>
+</head>
+<body>
+	<div id="state">
+		<!-- hasil reactjs akan di tampilkan disini -->
+	</div>
+
+	<script src="../build/react.js"></script>
+	<script src="../build/react-dom.js"></script>
+	<script src="../browser.min.js"></script>
+	<script type="text/babel">
+		var State = React.createClass({
+			getInitialState: function() {
+				return {
+					count: 5
+				}
+			},
+
+			render: function() {
+				return (<h1>Count: {this.state.count}!</h1>)
+			}
+		});
+
+		ReactDOM.render(
+			<State />,
+			document.getElementById('state')
+		);
+	</script>
+</body>
+</html>
