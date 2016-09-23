@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>data flow - reactjs</title>
+</head>
+<body>
+	<div id="data-flow">
+		<!-- hasil reactjs akan di tampilkan disini -->
+	</div>
+
+	<script src="../build/react.js"></script>
+	<script src="../build/react-dom.js"></script>
+	<script src="../browser.min.js"></script>
+	<script type="text/babel">
+		var DataFlow = React.createClass({
+			filterList: function(event) {
+				var updatedList = this.state.initialItems;
+				updatedList = updatedList.filter(function(item) {
+					return item.toLowerCase().search(
+						event.target.value.toLowerCase()
+					) !== -1;
+				});
+				this.setState({items: updatedList});
+			},
+
+			getInitialState: function() {
+				return {
+					initialItems: [
+						"Apples",
+						"Broccoli",
+						"Chicken",
+						"Duck",
+						"Eggs",
+						"Fish",
+						"Granola",
+						"Hash Browns"
+					],
+					items: []
+				}
+			},
+
+			componentWillMount: function() {
+				this.setState({items: this.state.initialItems})
+			},
+
+			render: function() {
+				return (
+					<div class="list-component">
+						<input type="text" placeholder="Search" onChange={this.filterList} />
+						<List items={this.state.items} />
+					</div>
+				)
+			}
+		});
+
+		var List = React.createClass({
+			render: function() {
+				return (
+					<ul>
+						{
+							this.props.items.map(function(item) {
+								return <li key={item}>{item}</li>
+							})
+						}
+					</ul>
+				);
+			}
+		});
+
+		ReactDOM.render(
+			<DataFlow />,
+			document.getElementById('data-flow')
+		);
+	</script>
+</body>
+</html>
