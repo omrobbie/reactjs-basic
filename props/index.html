@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>props - reactjs</title>
+</head>
+<body>
+	<div id="props">
+		<!-- hasil reactjs akan di tampilkan disini -->
+	</div>
+
+	<script src="../build/react.js"></script>
+	<script src="../build/react-dom.js"></script>
+	<script src="../browser.min.js"></script>
+	<script type="text/babel">
+		var Props = React.createClass({
+			render: function() {
+				return (<h1>Hello, {this.props.name}!</h1>)
+			}
+		});
+
+		ReactDOM.render(
+			<Props name="omrobbie" />,
+			document.getElementById('props')
+		);
+	</script>
+</body>
+</html>
