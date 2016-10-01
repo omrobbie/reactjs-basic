@@ -9,6 +9,7 @@ Belajar tentang penggunaan **reactjs**, pemahaman fundamental dan struktur penul
 * [Bootstrap](http://getbootstrap.com/getting-started "Getting started to bootstrap")
 * [Babel](https://babeljs.io/ "Babel is a JavaScript compiler")
 * [ExpressJS](https://expressjs.com/ "Fast, unopinionated, minimalist web framework for Node.js")
+* [Webpack](https://webpack.github.io/ "webpack module bundler")
 
 ---
 
@@ -23,3 +24,4 @@ Belajar tentang penggunaan **reactjs**, pemahaman fundamental dan struktur penul
 * [React JSX Spread Attributes](https://facebook.github.io/react/docs/jsx-spread.html "React JSX Spread Attributes")
 * [React JSX Gotchas](https://facebook.github.io/react/docs/jsx-gotchas.html "React JSX Gotchas")
 * [React.js Tutorial Pt 1: A Comprehensive Guide to Building Apps with React.js - Tyler McGinnis](https://tylermcginnis.com/react-js-tutorial-pt-1-a-comprehensive-guide-to-building-apps-with-react-js-8ce321b125ba#.qooyed2or "Article by: Tyler McGinnis")
+* [Setting Up a React.js Environment Using Npm, Babel 6 and Webpack - Tamizhvendan S](https://www.codementor.io/reactjs/tutorial/beginner-guide-setup-reactjs-environment-npm-babel-6-webpack "Setting up react environment")
