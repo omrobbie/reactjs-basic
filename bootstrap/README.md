@@ -4,14 +4,18 @@ Menggunakan **reactjs** di dalam **bootstrap**.
 
 ---
 
-### Inisialisasi file konfigurasi npm (package.json) :
+### Instalasi semua dependency dari file konfigurasi npm (package.json) :
+```
+$ npm install
+```
+atau inisialisasi file package.json yang baru dengan perintah :
 ```
 $ npm init
 ```
 
 ### Instalasi webpack :
 ```
-$ npm i webpack -S
+$ npm i webpack -D
 ```
 
 ### Buat file konfigurasi webpack :
@@ -55,7 +59,7 @@ $ ./node_modules/.bin/webpack -d
 
 ### Instalasi babel :
 ```
-$ npm i babel-core babel-loader babel-preset-es2015 babel-preset-react -S
+$ npm i babel-core babel-loader babel-preset-es2015 babel-preset-react -D
 ```
 
 ### Buat file konfigurasi babel :
