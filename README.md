@@ -25,3 +25,4 @@ Belajar tentang penggunaan **reactjs**, pemahaman fundamental dan struktur penul
 * [React JSX Gotchas](https://facebook.github.io/react/docs/jsx-gotchas.html "React JSX Gotchas")
 * [React.js Tutorial Pt 1: A Comprehensive Guide to Building Apps with React.js - Tyler McGinnis](https://tylermcginnis.com/react-js-tutorial-pt-1-a-comprehensive-guide-to-building-apps-with-react-js-8ce321b125ba#.qooyed2or "Article by: Tyler McGinnis")
 * [Setting Up a React.js Environment Using Npm, Babel 6 and Webpack - Tamizhvendan S](https://www.codementor.io/reactjs/tutorial/beginner-guide-setup-reactjs-environment-npm-babel-6-webpack "Setting up react environment")
+* [Building a Gallery using React.js, Webpack, Bootstrap, and SASS (CSS)](http://www.eloquentwebapp.com/building-a-gallery-using-reactjs-webpack-bootstrap-and-sass/ "Setting up react, webpack, bootstrap, and sass")
